@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-agri-bg text-agri-text font-sans antialiased dark:bg-[#0A120A] dark:text-gray-100 transition-colors duration-300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 125, 50, 0.12);
+}
+
+.dark .glass-card {
+  background: rgba(18, 28, 19, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.35);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
