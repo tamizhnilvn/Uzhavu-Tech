@@ -7,5 +7,3 @@ Engineering Higher Farmer Income Through Smart Agriculture.
 1. **Clone & Install Dependencies**
    ```bash
    git clone [https://github.com/uzhavu-tech/uzhavu-tech-web.git](https://github.com/uzhavu-tech/uzhavu-tech-web.git)
-   cd uzhavu-tech-web
-   npm install
